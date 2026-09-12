@@ -45,7 +45,7 @@ body {
   width: 100%;
   height: 100%;
   font-size: 14px;
-  font-family: "Sawarabi Gothic";
+  font-family: "Sawarabi Gothic", sans-serif;
   background-color: var(--base);
   background-image: linear-gradient(#fafafaaa, #fafafaaa), url("images/noise.webp");
   color: var(--black);
