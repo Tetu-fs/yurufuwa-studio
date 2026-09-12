@@ -6,12 +6,23 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ゆるふわスタジオ",
+        "url": "https://yurufuwa-studio.com/",
+        "logo": "https://yurufuwa-studio.com/images/logo.png"
+      }
+    </script>
   </head>
   <body>
     <header>
       <div class="container">
         <a class="logo" href="index.html">
-          <object type="image/svg+xml" data="images/logo.svg" width="180" height="24"></object>
+          <svg width="180" height="24">
+            <use href="images/sprite.svg#logo"></use>
+          </svg>
         </a>
       </div>
     </header>
@@ -22,54 +33,64 @@
           <div class="articles">
             <article>
               <h3 class="section_title">雨とポモドーロ</h3>
-              <a href="https://rain-pomodoro.yurufuwa-studio.com/" target="_blank">
-                <img class="thumbnail" src="images/rain-pomodoro.webp" alt="雨とポモドーロ" />
-                <p>新しいタブで開く</p>
-              </a>
+              <img
+                class="thumbnail"
+                src="images/rain-pomodoro.webp"
+                alt="雨とポモドーロ"
+                loading="lazy"
+              />
+              <p>
+                <a href="https://rain-pomodoro.yurufuwa-studio.com/" target="_blank">
+                  新しいタブで開く
+                </a>
+              </p>
               <p>自分の作業用に作りました</p>
               <p>雨音が鳴らせたり、無駄にリッチな背景にしたりしてます</p>
-              <p>モバイルだと少し重いかも</p>
             </article>
             <article>
               <h3 class="section_title">StreamSet</h3>
-              <a
-                href="https://yurufuwa-studio.booth.pm/items/7739522"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img class="thumbnail" src="images/stream-set.webp" alt="雨とポモドーロ" />
-                <p>新しいタブで開く</p>
-              </a>
+              <img
+                class="thumbnail"
+                src="images/stream-set.webp"
+                alt="雨とポモドーロ"
+                loading="lazy"
+              />
+              <p>
+                <a
+                  href="https://yurufuwa-studio.booth.pm/items/7739522"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  新しいタブで開く
+                </a>
+              </p>
               <p>初心者・入門向けの音質調整VST3プラグイン</p>
               <p>Boothにて1,000円で販売中、是非どうぞ</p>
             </article>
           </div>
         </section>
-        <section>
-          <h2>ゆるふわスタジオって？</h2>
-          <div class="articles">
-            <article>
-              <h3>これはなに？</h3>
-              <p>なんか作りて～ってなったり、お小遣いが欲しくなったときに動きます</p>
-              <p>なんか出すときにキャッチーな方がいいかなと思ったので作りました</p>
-              <p>意識低く、ゆるくまったりやっていきます</p>
-            </article>
-            <article>
-              <h3>何者？</h3>
-              <p>Tetuといいます</p>
-              <p>フロントエンドエンジニアっぽい仕事をしています</p>
-              <p>ゲームとか音楽とか、ドット絵とかインドアが好きです</p>
-            </article>
-          </div>
-        </section>
+      </div>
+      <div class="container profile">
+        <article>
+          <h3>ゆるふわスタジオって？</h3>
+          <p>なんか作って出すときにキャッチーにしたかったので立ち上げました</p>
+          <p>作りたいものを作ったり、売りたいものを売ったりします</p>
+          <p>意識低く、ゆるくまったりやっていきます</p>
+          <br />
+          <p>中の人はTetuといいます</p>
+          <p>フロントエンドエンジニアっぽい仕事をしています</p>
+          <p>ゲームとか音楽とか、ドット絵とかが趣味です</p>
+        </article>
       </div>
     </main>
     <footer>
       <div class="container">
         <span>© 2026 Yurufuwa Studio</span>
-        <a href="https://x.com/@Tetu_fs" target="_blank" rel="noopener noreferrer"
-          >何かあればこちらまで</a
-        >
+        <span>
+          <a href="https://x.com/@Tetu_fs" target="_blank" rel="noopener noreferrer">
+            何かあればこちらへ
+          </a>
+        </span>
       </div>
     </footer>
   </body>

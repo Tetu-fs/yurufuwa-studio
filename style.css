@@ -1,4 +1,15 @@
 /*手打ちの温かみのあるCSS*/
+:root {
+  --black: #1e0f07;
+  --gray: #534135;
+  --white: #fafafa;
+  --base: #f5f5f5;
+  --primary: #162d4f;
+  --secondary: #687120;
+}
+object {
+  color: var(--black);
+}
 * {
   box-sizing: border-box;
 }
@@ -35,8 +46,9 @@ body {
   height: 100%;
   font-size: 14px;
   font-family: "Sawarabi Gothic";
-  background-color: #f5f5f5;
-  color: #333333;
+  background-color: var(--base);
+  background-image: linear-gradient(#fafafaaa, #fafafaaa), url("images/noise.webp");
+  color: var(--black);
   display: flex;
   flex-direction: column;
 }
@@ -54,13 +66,18 @@ footer {
 
 main {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
   flex: 1;
 }
 
 footer {
-  color: #555555;
+  color: var(--gray);
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .container {
@@ -71,25 +88,20 @@ footer {
 
 /*Thanks https://github.com/chr15m/DoodleCSS*/
 .content {
-  padding: 8px 16px;
+  padding: 16px;
   display: flex;
   flex-direction: column;
   gap: 16px;
   border-style: solid;
   border-width: 8px;
-  border-image: url("images/border.svg") 10 10 10 10 stretch stretch;
+  background-color: var(--white);
+  border-image: url("images/rect.svg") 10 10 10 10 stretch stretch;
 }
 
-.avatar {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
-  border-radius: 100%;
-}
 .profile {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  color: var(--gray);
+  background-color: transparent;
+  padding: 0 16px;
 }
 
 .section_title {
@@ -126,9 +138,9 @@ section h3 {
 }
 
 a {
-  font-weight: 500;
   margin-bottom: 1rem;
   transition: opacity 0.1s ease-in-out;
+  color: var(--primary);
 }
 
 a:hover {
@@ -139,6 +151,7 @@ object {
   pointer-events: none;
 }
 .logo {
+  color: var(--black);
   display: block;
   margin: 0;
   width: 180px;
